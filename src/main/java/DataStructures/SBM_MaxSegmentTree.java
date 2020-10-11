@@ -44,10 +44,10 @@ class SBM_MaxSegmentTree {
         int currentsLeftChildIndex = getLeftChildIndex(treeCurrentIndex);
         int currentRightChildIndex = getRightChildIndex(treeCurrentIndex);
 
-        int leftSideMin = constructSegmentTree(originalArr, currentsLeftChildIndex, arrStartIndex, mid);
-        int rightSideMin = constructSegmentTree(originalArr, currentRightChildIndex, mid + 1, arrEndIndex);
+        int leftSideMax = constructSegmentTree(originalArr, currentsLeftChildIndex, arrStartIndex, mid);
+        int rightSideMax = constructSegmentTree(originalArr, currentRightChildIndex, mid + 1, arrEndIndex);
 
-        this.segmentTree[treeCurrentIndex] = getMax(leftSideMin, rightSideMin);
+        this.segmentTree[treeCurrentIndex] = getMax(leftSideMax, rightSideMax);
 
         return this.segmentTree[treeCurrentIndex];
     }

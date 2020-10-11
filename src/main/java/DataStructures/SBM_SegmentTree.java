@@ -30,8 +30,8 @@ public class SBM_SegmentTree {
         }
 
         if (arrStartIndex == arrEndIndex) {
-            this.segmentTree[treeCurrentIndex] = originalArr[arrStartIndex];
-            return this.segmentTree[treeCurrentIndex];
+                this.segmentTree[treeCurrentIndex] = originalArr[arrStartIndex];
+                return this.segmentTree[treeCurrentIndex];
         }
 
         int mid = getMid(arrStartIndex, arrEndIndex);
