@@ -48,7 +48,7 @@ public class SBM_PrimeGenerator {
     public void printPrimeNumbers () {
         for (int i = 2; i < this.N; i++) {
             if (this.numbers[i] == 0) {
-                System.out.print(i + " ");
+                System.out.print(i + ",");
             }
         }
         System.out.println();
@@ -57,7 +57,7 @@ public class SBM_PrimeGenerator {
 
     //Test Driver method:
     public static void main(String[] args) {
-        SBM_PrimeGenerator primeGenerator = new SBM_PrimeGenerator(20);
+        SBM_PrimeGenerator primeGenerator = new SBM_PrimeGenerator(100000);
         primeGenerator.printPrimeNumbers();
     }
 }

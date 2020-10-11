@@ -26,6 +26,28 @@ public class SBM_LinkedList<T> {
         return this.head;
     }
 
+//    public SBM_LinkedListNode sortedInsert (T data) {
+//        SBM_LinkedListNode currentNode = this.head;
+//        while (currentNode != null) {
+//            if ((Integer)currentNode.data <(Integer)data)
+//                currentNode = currentNode.next;
+//            else break;
+//        }
+//        if (currentNode == null){
+//            return this.insertAtEnd(data);
+//        }
+//        else return this.insertBefore(currentNode, data);
+//    }
+//
+//    public void sortedDelete (T data) {
+//        SBM_LinkedListNode currentNode = this.head;
+//        while (currentNode != null) {
+//            if ((Integer)currentNode.data == (Integer)data) break;
+//        }
+//        deleteNode(currentNode);
+//
+//    }
+
     public SBM_LinkedListNode insertAtEnd (T data) {
         SBM_LinkedListNode<T> node = createNode(data);
         if (this.head == null) {
